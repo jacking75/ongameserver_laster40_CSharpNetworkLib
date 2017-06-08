@@ -1,0 +1,42 @@
+package SimpleChat;
+
+enum MESSAGE_ID
+{
+	CMSG_HELLO = 1;
+	SMSG_HELLO = 2;
+	CMSG_CHAT = 3;
+	SMSG_CHAT = 4;
+	CMSG_BYE = 5;
+	SMSG_BYE = 6;
+}
+
+message CMsgHello
+{
+	required string account = 1;
+	required string passwd = 2;
+	optional string desc = 3;
+}
+
+message SMsgHello
+{
+	enum RET { OK = 1; FAILED = 2; }
+	required RET returnValue = 1;
+}
+
+message CMsgChat
+{
+	required string chatMsg = 1;
+}
+message SMsgChat
+{
+	required string sender = 1;
+	required string chatMsg = 2;
+}
+
+message CMsgBye
+{
+}
+
+message SMsgBye
+{
+}

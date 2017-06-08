@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetService", "NetService\NetService.csproj", "{6AAAD000-C52C-494D-9CDD-95E939D5D443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClient", "SimpleClient\SimpleClient.csproj", "{9C595F58-F530-4BEE-A87B-532E9D31FF0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443} = {6AAAD000-C52C-494D-9CDD-95E939D5D443}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatServer_Protobuf", "SimpleChatServer_Protobuf\SimpleChatServer_Protobuf.csproj", "{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443} = {6AAAD000-C52C-494D-9CDD-95E939D5D443}
+		{5587F255-1F73-454C-B972-198155513CF4} = {5587F255-1F73-454C-B972-198155513CF4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatClient_Protobuf", "SimpleChatClient_Protobuf\SimpleChatClient_Protobuf.csproj", "{6E02C427-3D85-4858-A64E-DDF721A845ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443} = {6AAAD000-C52C-494D-9CDD-95E939D5D443}
+		{5587F255-1F73-454C-B972-198155513CF4} = {5587F255-1F73-454C-B972-198155513CF4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatProtocol", "SimpleChatProtocol\SimpleChatProtocol.csproj", "{5587F255-1F73-454C-B972-198155513CF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443} = {6AAAD000-C52C-494D-9CDD-95E939D5D443}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEchoServer", "SimpleEchoServer\SimpleEchoServer.csproj", "{F8807061-F533-4B94-9171-3B325812FB3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443} = {6AAAD000-C52C-494D-9CDD-95E939D5D443}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Debug|x64.ActiveCfg = Debug|x64
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Debug|x64.Build.0 = Debug|x64
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Debug|x86.ActiveCfg = Debug|x86
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Debug|x86.Build.0 = Debug|x86
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Release|x64.ActiveCfg = Release|x64
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Release|x64.Build.0 = Release|x64
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Release|x86.ActiveCfg = Release|x86
+		{6AAAD000-C52C-494D-9CDD-95E939D5D443}.Release|x86.Build.0 = Release|x86
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Debug|x64.ActiveCfg = Debug|x64
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Debug|x64.Build.0 = Debug|x64
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Debug|x86.ActiveCfg = Debug|x86
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Debug|x86.Build.0 = Debug|x86
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Release|x64.ActiveCfg = Release|x64
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Release|x64.Build.0 = Release|x64
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Release|x86.ActiveCfg = Release|x86
+		{9C595F58-F530-4BEE-A87B-532E9D31FF0B}.Release|x86.Build.0 = Release|x86
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Debug|x64.ActiveCfg = Debug|x64
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Debug|x64.Build.0 = Debug|x64
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Debug|x86.ActiveCfg = Debug|x86
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Debug|x86.Build.0 = Debug|x86
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Release|x64.ActiveCfg = Release|x64
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Release|x64.Build.0 = Release|x64
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Release|x86.ActiveCfg = Release|x86
+		{89DC3EC4-6A68-4B64-9F6B-D74A17A585B3}.Release|x86.Build.0 = Release|x86
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Debug|x64.ActiveCfg = Debug|x64
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Debug|x64.Build.0 = Debug|x64
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Debug|x86.ActiveCfg = Debug|x86
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Debug|x86.Build.0 = Debug|x86
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Release|x64.ActiveCfg = Release|x64
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Release|x64.Build.0 = Release|x64
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Release|x86.ActiveCfg = Release|x86
+		{6E02C427-3D85-4858-A64E-DDF721A845ED}.Release|x86.Build.0 = Release|x86
+		{5587F255-1F73-454C-B972-198155513CF4}.Debug|x64.ActiveCfg = Debug|x64
+		{5587F255-1F73-454C-B972-198155513CF4}.Debug|x64.Build.0 = Debug|x64
+		{5587F255-1F73-454C-B972-198155513CF4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5587F255-1F73-454C-B972-198155513CF4}.Release|x64.ActiveCfg = Release|x64
+		{5587F255-1F73-454C-B972-198155513CF4}.Release|x64.Build.0 = Release|x64
+		{5587F255-1F73-454C-B972-198155513CF4}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Debug|x64.ActiveCfg = Debug|x64
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Debug|x64.Build.0 = Debug|x64
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Debug|x86.ActiveCfg = Debug|x86
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Debug|x86.Build.0 = Debug|x86
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Release|x64.ActiveCfg = Release|x64
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Release|x64.Build.0 = Release|x64
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Release|x86.ActiveCfg = Release|x86
+		{F8807061-F533-4B94-9171-3B325812FB3A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
